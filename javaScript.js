@@ -15,7 +15,7 @@ console.log('what iis this')
 
 
 
-
+// ---------------------------------------------------------------------------------
  // create and element with a new thing  use on css with a dom.
  const myTags = document.getElementsByTagName('li')
        
@@ -40,6 +40,29 @@ console.log('what iis this')
 
 
 
+//  -----------------------------------------------------------------------------------
+// create a new count btn
+    document.getElementById('box').style.border = '1px solid blue'
+    document.getElementById('box').style.margin = '10px'
+    document.getElementById('box').style.padding = '10px'
+    document.getElementById('box').style.textAlign = 'center'
+    // declare the value
+    let value = 0
+        //add the count number
+    const addBtn = document.getElementById('add')
+    addBtn.addEventListener('click' , function(){
+        value += 1;
+        document.getElementById('display').innerText = value;
+    })
+    //subtract the count number
+    const subtractBtn = document.getElementById('subtract').addEventListener('click' , function(){
+        value -= 1
+        document.getElementById('display').innerText = value;
+    })
+    
+
+// -------------------------------------------------------------------------------
  //create the new textBox
 
- const commentBox = document.getElementById('commentSection')
+//  const commentBox = document.getElementById('commentSection')
+//  console.log(commentBox.innerText)
