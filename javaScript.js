@@ -42,6 +42,7 @@ console.log('what iis this')
 
 //  -----------------------------------------------------------------------------------
 // create a new count btn
+    // style the box 
     document.getElementById('box').style.border = '1px solid blue'
     document.getElementById('box').style.margin = '10px'
     document.getElementById('box').style.padding = '10px'
@@ -62,7 +63,15 @@ console.log('what iis this')
     
 
 // -------------------------------------------------------------------------------
- //create the new textBox
+ //create the new comment btn------
+ 
+
+ const sendBtn = document.getElementById('sendBtn').addEventListener('click', function(){
+    const commentSection = document.getElementById('commentSection')
+    console.log(commentSection.value)
+ })
+ 
+ 
 
 //  const commentBox = document.getElementById('commentSection')
 //  console.log(commentBox.innerText)
