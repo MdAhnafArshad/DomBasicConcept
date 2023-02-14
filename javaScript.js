@@ -67,8 +67,11 @@ console.log('what iis this')
  
 
  const sendBtn = document.getElementById('sendBtn').addEventListener('click', function(){
-    const commentSection = document.getElementById('commentSection')
-    console.log(commentSection.value)
+    const commentSection = document.getElementById('commentSection').value
+    const titleText = document.getElementById('titleText')
+    titleText.innerText = commentSection
+    
+    
  })
  
  
